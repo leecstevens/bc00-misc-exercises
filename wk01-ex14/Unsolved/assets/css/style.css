@@ -1,0 +1,61 @@
+/* TODO: Label selector type */
+* {
+  /* 
+      Globally setting fonts in specific order
+  */
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  }
+
+/* TODO: Label selector type */
+body {
+  /*
+    Applies the entire body background color.
+  */
+  background-color: lemonchiffon;
+}
+
+header,
+footer {
+
+  /*
+    width: the entire width of the element
+    height: static 100px
+    line-height: footer's height static 100px
+    color: text color of footer
+    background-color: Background of footer
+  */
+
+  width: 100%;
+  height: 100px;
+  line-height: 100px;
+  color: #f0ead6;
+  background-color: #191970;
+}
+
+figure {
+
+  /*
+    width: static 200px
+    has a yellowish background
+  */
+
+  width: 200px;
+  background-color: #f0ead6;
+}
+
+/* TODO: Label selector type */
+.highlighted-text {
+  /*
+  applies weight: 900
+  */
+  
+  font-weight: bolder;
+}
+
+/* TODO: Label selector type */
+#contact-section {
+  /*
+    background is very light yellow-ish
+  */
+  background-color: #f0ead6;
+}

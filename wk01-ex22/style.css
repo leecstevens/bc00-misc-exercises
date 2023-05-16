@@ -1,0 +1,18 @@
+
+* {
+    background-color: wheat;
+}
+
+header {
+    position: absolute;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
+    background-image: linear-gradient(to right, yellow,brown)
+}
+
+img {
+    border:15px solid darkblue;
+}
