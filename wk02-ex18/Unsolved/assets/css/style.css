@@ -9,8 +9,6 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 1%;
-  background-color: #13293d;
-  color: #fff;
 }
 
 h1 {
@@ -20,6 +18,11 @@ h1 {
 h2 {
   margin: 2% 0;
   font-size: 180%;
+}
+
+header, nav, span[css-tip]:hover::after, span[css-tip]:focus::after{
+  background-color: #13293d;
+  color: #fff;
 }
 
 nav ul {
@@ -123,8 +126,6 @@ span[css-tip]:focus::after{
   border: 1px #aaaaaa solid;
   border-radius: 10px;
   padding: 12px;
-  background-color: #13293d;
-  color: #fff;
   font-size: 14px;
   z-index: 1;
 }
