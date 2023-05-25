@@ -1,3 +1,5 @@
+//We skipped this to do local vs. global variables.
+
 // TODO: Declare variable 'shout' with the value 'Shout' so it's available to `justShout` and `shoutItAllOut` functions
 function justShout() {
   console.log(shout + ", " + shout);
