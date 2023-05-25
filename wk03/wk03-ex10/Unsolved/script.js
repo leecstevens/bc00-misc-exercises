@@ -15,3 +15,17 @@ if (expression1 && expression2) {
 } else {
     console.log("Something is way different.")
 }
+
+//Another way...
+if (expression1 && expression2) {
+    console.log("True ✅ True ✅")
+} else if (expression1) {
+    console.log("True ✅ False ❌")
+} else if (expression2) {
+    console.log("False ❌ True ✅")
+} else if (!expression2 && !expression1) {
+    console.log("False ❌ False ❌")
+} else {
+    console.log("Something is way different.")
+}
+
