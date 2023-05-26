@@ -17,7 +17,6 @@ if (drink_order.ready) {
 }
 
 
-
 /*
 //WRITE YOUR CODE BELOW
 let drink_orders = [{
