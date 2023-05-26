@@ -34,5 +34,4 @@ helloThis(); // Log a global object as "this"
 child.ageTenYears(); // Adds 10 to the exting 10
 investor.investment.investmentGrowth(); // 5750: 5000 * 1.15 from function
 
-
 console.log(Math.floor(Math.random() * 100))

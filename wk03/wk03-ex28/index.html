@@ -1,0 +1,49 @@
+<script>
+    let score = {
+        wins: 0,
+        losses: 0,
+        ties: 0
+    }
+    const things = ["Rock", "Paper", "Scissors"]
+
+function check_answer(user_input,random_input) {
+    let user_answer = user_input[0].toLowerCase();
+    let random_answer = random_input[0].toLowerCase();
+    if (user_answer == "q") {
+        active=false;
+        return
+    }
+    if (user_answer == random_answer) {
+        score["ties"]++
+        return "It's a tie, try again."
+    } else if (user_answer == 'r' && random_answer == 's') {
+        score["wins"]++
+        return "Rock smashes scissors"
+    } else if (user_answer == 'r' && random_answer == 'p') {
+        score["losses"]++
+        return "Paper wraps rock"
+    } else if (user_answer == 's' && random_answer == 'p') {
+        score["wins"]++
+        return "Scissors cut paper"
+    } else if (user_answer == 's' && random_answer == 'r') {
+        score["losses"]++
+        return "Rock smashes scissors"
+    } else if (user_answer == 'p' && random_answer == 's') {
+        score["losses"]++
+        return "Scissors cut paper"
+    } else if (user_answer == 'p' && random_answer == 'r') {
+        score["wins"]++
+        return "Paper wraps rock"
+    }
+}
+
+let active = true
+let user_input = ""
+do {
+    user_input = prompt("Enter 'R'ock - 'P'aper - 'S'cissors -- 'Q' to Quit");
+    random_input = things[Math.floor(Math.random() * things.length)]
+    result = check_answer(user_input,random_input)
+    alert(`${result}\nWins: ${score.wins}\nLosses: ${score.losses}\nTies: ${score.ties}`)
+}
+while (active==true)
+</script>
