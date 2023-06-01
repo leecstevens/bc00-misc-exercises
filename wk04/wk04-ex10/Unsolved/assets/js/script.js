@@ -19,7 +19,6 @@ function countdown() {
       clearInterval(timeInterval);
       displayMessage()
     }
-    
     //
   },1000);
 }
