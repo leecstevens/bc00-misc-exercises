@@ -17,6 +17,7 @@ function countdown() {
     
     if (timeLeft === 0) {
       clearInterval(timeInterval);
+      timerEl.textContent = "Time's Up"
       displayMessage()
     }
     //

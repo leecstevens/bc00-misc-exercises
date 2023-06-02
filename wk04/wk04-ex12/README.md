@@ -22,6 +22,8 @@ The following animation demonstrates the web application's appearance and functi
 
 What method can we use to listen for an mouse click? 
 
+addEventListener
+
 ## 🏆 Bonus
 
 If you have completed this activity, work through the following challenge with your partner to further your knowledge:
