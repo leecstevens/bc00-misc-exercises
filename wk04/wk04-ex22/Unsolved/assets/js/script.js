@@ -14,6 +14,7 @@ function displayMessage(type, message) {
 
 function renderLastRegistered() {
   // TODO: Retrieve the last email and password and render it to the page
+  userEmailSpan.innerText = localStorage.getItem("email")
 }
 
 signUpButton.addEventListener("click", function(event) {
@@ -27,6 +28,7 @@ signUpButton.addEventListener("click", function(event) {
   } else if (password === "") {
     displayMessage("error", "Password cannot be blank");
   } else {
+    localStorage.setItem("email", email)
     displayMessage("success", "Registered successfully");
 
   // TODO: Save email and password to localStorage and render the last registered user
