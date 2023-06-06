@@ -8,20 +8,24 @@ var todos = [];
 // TODO: What is the purpose of this function?
 function renderTodos() {
   // TODO: Describe the functionality of the following two lines of code.
-  todoList.innerHTML = "";
-  todoCountSpan.textContent = todos.length;
+  todoList.innerHTML = "";  // blanking the todolist or #todo-list id
+  todoCountSpan.textContent = todos.length; //takes the array and writing the array length to the element
   
   // TODO: Describe the functionality of the following `for` loop.
   for (var i = 0; i < todos.length; i++) {
+    // create loop to add todos.
     var todo = todos[i];
 
+    // create li element with the todo content
     var li = document.createElement("li");
     li.textContent = todo;
     li.setAttribute("data-index", i);
 
+    // create button to complete todo when complete.
     var button = document.createElement("button");
     button.textContent = "Complete ✔️";
 
+    //adds the new li button
     li.appendChild(button);
     todoList.appendChild(li);
   }
@@ -30,13 +34,15 @@ function renderTodos() {
 // TODO: What is the purpose of the following function?
 function init() {
   // TODO: What is the purpose of the following line of code?
-  var storedTodos = JSON.parse(localStorage.getItem("todos"));
+  /* Creates var, parses input from localstorage todos */
+  var storedTodos = JSON.parse(localStorage.getItem("todos")); 
   // TODO: Describe the functionality of the following `if` statement.
+  // if the storedtodos has data, populate todos with it
   if (storedTodos !== null) {
     todos = storedTodos;
   }
   // TODO: Describe the purpose of the following line of code.
-  renderTodos();
+  renderTodos(); //Invoking the function
 }
 
 function storeTodos() {
@@ -73,4 +79,4 @@ todoList.addEventListener("click", function(event) {
   }
 });
 
-init();
+init(); // Calls the init function above

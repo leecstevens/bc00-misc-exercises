@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Geologica:wght@400;700&family=Open+Sans:wght@400;700&family=Ubuntu:wght@400;700&display=swap');
+* {
+    box-sizing: border-box;
+    font-family: Geologica;
+}
+
+:root {
+    --box-color: yellow;
+    --box-back: black;
+}
+
+body {
+    background-color: gray;
+}
+
+.flex-left, .flex-right {
+    background-color: var(--box-color);
+    border: 1% solid;
+    height: 50vh;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.flex-left {
+    width: 65%;
+}
+
+.flex-right {
+    width: 25%;
+}
