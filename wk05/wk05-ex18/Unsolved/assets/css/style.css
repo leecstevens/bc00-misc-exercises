@@ -8,3 +8,17 @@
 
 /* Add your custom class style definitions here */
 /* HINT: Apply CSS variables using `var(--brown)` syntax as your property value */
+
+.custom-nav-link {
+color: var(--teal)
+}
+
+.custom-navbar {
+  background-color: var(--teal);
+
+}
+
+.navbar-dark .navbar-nav .customer {
+  background-color: var(--teal);
+  color: var(--light)
+}
