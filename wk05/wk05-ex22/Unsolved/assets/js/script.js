@@ -10,6 +10,40 @@ var printSkills = function (name, date) {
   listEl.appendTo(skillsListEl);
 };
 
+$( function() {
+  var skillNames = [
+    "ActionScript",
+    "AppleScript",
+    "Asp",
+    "BASIC",
+    "C",
+    "C++",
+    "Clojure",
+    "COBOL",
+    "ColdFusion",
+    "Erlang",
+    "Fortran",
+    "Groovy",
+    "Haskell",
+    "Java",
+    "JavaScript",
+    "Lisp",
+    "Perl",
+    "PHP",
+    "Python",
+    "Ruby",
+    "Scala",
+    "Scheme"
+  ];
+  $( "#skill-name" ).autocomplete({
+    source: skillNames
+  });
+} );
+
+$( function() {
+  $( "#datepicker" ).datepicker();
+} );
+
 var handleFormSubmit = function (event) {
   event.preventDefault();
 
@@ -31,6 +65,7 @@ formEl.on('submit', handleFormSubmit);
 
 // Add Autocomplete widget here
 //
+
 
 // Add Datepicker widget here
 //
